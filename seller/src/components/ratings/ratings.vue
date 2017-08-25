@@ -80,7 +80,7 @@ export default {
       }
     },
     created(){
-      this.$http.get('/api/ratings').then(response=>{
+      this.$http.get('api/ratings').then(response=>{
         response=response.body;
         this.ratings=response.data;
         this.$nextTick(()=>{
