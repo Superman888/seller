@@ -30,7 +30,7 @@
       };
     },
     created(){
-      this.$http.get('/api/seller').then(response=>{
+      this.$http.get('api/seller').then(response=>{
         this.someData=response.body.seller
       });
     },
